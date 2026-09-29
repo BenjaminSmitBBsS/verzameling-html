@@ -1,0 +1,743 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="De Ultimate Website Supercharge Bundel van BBsSolutions: zes apps voor je website - AI-chatbot, boekingssysteem, slider, YouTube-galerij, Google Reviews en Instagram-feed - samen EUR 60 per jaar.">
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Ultimate Supercharge Bundel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=Figtree:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
+<style>
+  :root{
+    --ink:#0A090C; --panel:#15121A; --panel-2:#1D1926; --line:#2C2634;
+    --text:#FFFFFF; --muted:#FFFFFF; --dim:#7C7488;
+    --hot:#FF5B23; --mag:#EC1D6E; --gold:#FFC24B; --go:#2FD79B;
+    --grad:linear-gradient(96deg,var(--hot),var(--mag));
+    --shadow:0 24px 60px -30px rgba(0,0,0,.9);
+    --bar:rgba(10,9,12,.88);
+    --r:14px;
+    --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+    --body:"Figtree","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  }
+  :root[data-theme="light"]{
+    --ink:#F6F2EF; --panel:#FFFFFF; --panel-2:#FBF7F4; --line:#E4DBD5;
+    --text:#171220; --muted:#5F5769; --dim:#807889;
+    --shadow:0 22px 50px -34px rgba(40,20,50,.45);
+    --bar:rgba(246,242,239,.9);
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --ink:#F6F2EF; --panel:#FFFFFF; --panel-2:#FBF7F4; --line:#E4DBD5;
+      --text:#171220; --muted:#5F5769; --dim:#807889;
+      --shadow:0 22px 50px -34px rgba(40,20,50,.45);
+      --bar:rgba(246,242,239,.9);
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ink); color:var(--text);
+    font-family:var(--body); font-size:17px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:78px; /* ruimte voor de vaste balk */
+  }
+  .wrap{max-width:1060px; margin:0 auto; padding-inline:20px; padding-block:0}
+  h1,h2,h3{font-family:var(--display); font-weight:800; text-wrap:balance; margin:0; line-height:1.02; letter-spacing:-.02em}
+  h1{font-size:clamp(1.7rem,3.6vw,2.5rem); line-height:1.06; color:var(--hot)}
+  h1 .grad-text {background:none; -webkit-text-fill-color:initial; color:var(--hot)}
+  h2{font-size:clamp(1.7rem,3.6vw,2.5rem); line-height:1.06; color:var(--gold)}
+  h3{font-size:1.12rem; line-height:1.25; letter-spacing:-.01em; color:var(--gold)}
+  p{margin:0}
+  a{color:inherit}
+  strong, b {color: var(--gold);}
+  .eyebrow{
+    font-family:var(--mono); font-size:.72rem; font-weight:700;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--dim);
+  }
+  .grad-text{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line)}
+  .hero::before{
+    content:""; position:absolute; inset:0;
+    background:
+      radial-gradient(900px 420px at 12% -10%, rgba(255,91,35,.22), transparent 62%),
+      radial-gradient(760px 420px at 92% 8%, rgba(236,29,110,.20), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative; display:flex; flex-direction:column; gap:26px; padding-block:56px 48px}
+  .rail{display:flex; align-items:center; gap:12px}
+  .rail .bar{height:5px; flex:1; border-radius:99px; background:var(--grad)}
+  .hero h1 .line2{display:block}
+  .lede{max-width:60ch; font-size:clamp(1.02rem,2.1vw,1.2rem); color:var(--muted)}
+  .lede strong{color:var(--gold); font-weight:700}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+    font-weight:700; font-size:1rem; padding:14px 22px; border-radius:99px;
+    border:1px solid transparent; transition:transform .16s ease, box-shadow .16s ease;
+    font-family:var(--body); cursor:pointer;
+  }
+  .btn-primary{background:var(--grad); color:#fff; box-shadow:0 12px 30px -12px rgba(236,29,110,.75)}
+  .btn-primary:hover{transform:translateY(-2px)}
+  .btn-ghost{border-color:var(--line); background:var(--panel); color:var(--text)}
+  .btn-ghost:hover{border-color:var(--hot)}
+  .btn:focus-visible, a:focus-visible, input:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+  .ticks{display:flex; flex-wrap:wrap; gap:8px 20px; font-size:.92rem; color:var(--muted)}
+  .ticks span{display:inline-flex; align-items:center; gap:8px}
+  .dot{width:7px; height:7px; border-radius:99px; background:var(--go); flex:none}
+
+  .pricechip{
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 14px;
+    align-self:flex-start; padding:14px 20px; border-radius:var(--r);
+    background:var(--panel); border:1px solid var(--line); box-shadow:var(--shadow);
+  }
+  .pricechip .was{font-family:var(--mono); color:var(--dim); text-decoration:line-through; font-size:.95rem}
+  .pricechip .now{font-family:var(--display); font-weight:800; font-size:2.1rem; letter-spacing:-.03em}
+  .pricechip .per{font-family:var(--mono); font-size:.85rem; color:var(--muted)}
+  .pricechip .sub{font-family:var(--mono); font-size:.78rem; color:var(--gold); width:100%}
+
+  /* ---------- sections ---------- */
+  section{padding-block:64px; border-bottom:1px solid var(--line)}
+  .sec-head{display:flex; flex-direction:column; gap:12px; max-width:62ch; margin-bottom:34px}
+  .sec-head p{color:var(--muted)}
+
+  /* ---------- tools ---------- */
+  .tools{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+  .tool{
+    display:flex; flex-direction:column; background:var(--panel);
+    border:1px solid var(--line); border-radius:var(--r); overflow:hidden;
+    transition:border-color .18s ease, transform .18s ease;
+  }
+  .tool:hover{border-color:var(--hot); transform:translateY(-3px)}
+  .tool::before{content:""; display:block; height:4px; background:var(--grad); opacity:.75}
+  .tool:hover::before{opacity:1}
+  .shot{cursor:zoom-in; display:block; width:100%; max-width:100%; aspect-ratio:16/9; object-fit:cover; object-position:center top; background:#0d0b10; border-bottom:1px solid var(--line)}
+  .shot-right{object-position:right top}
+  .tool-body{display:flex; flex-direction:column; gap:10px; padding:22px 22px 24px; text-decoration:none; color:inherit}
+  .tool-top{display:flex; align-items:flex-start; justify-content:space-between; gap:12px}
+  .tag{font-family:var(--mono); font-size:.72rem; color:var(--dim); white-space:nowrap; padding-top:3px}
+  .tool p{font-size:.96rem; color:var(--muted)}
+  .tool .gain{color:var(--text); font-weight:600; font-size:.95rem}
+  .demo{
+    margin-top:4px; font-family:var(--mono); font-size:.8rem; font-weight:700;
+    text-decoration:none; color:var(--hot); letter-spacing:.02em;
+    border-bottom:1px solid color-mix(in srgb, var(--hot) 40%, transparent); align-self:flex-start;
+  }
+  .tool-body:hover .demo{color:var(--mag); border-color:var(--mag)}
+  .tool-body:focus-visible{outline:2px solid var(--gold); outline-offset:-3px; border-radius:var(--r)}
+
+  /* ---------- lightbox ---------- */
+  .lb{position:fixed; inset:0; z-index:40; display:flex; align-items:center; justify-content:center;
+    padding:clamp(16px,4vw,40px); background:rgba(6,5,8,.94);
+    backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px)}
+  .lb-figure{margin:0; display:flex; flex-direction:column; gap:16px; max-width:min(1120px,100%); width:100%}
+  .lb-figure img{display:block; width:100%; max-height:70vh; object-fit:contain;
+    border-radius:12px; border:1px solid rgba(255,255,255,.14); background:#0d0b10}
+  .lb-cap{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 18px}
+  .lb-name{font-family:var(--display); font-weight:800; font-size:1.15rem; letter-spacing:-.02em; color:#F2EDF4}
+  .lb-actions{display:flex; flex-wrap:wrap; gap:10px}
+  .lb .btn-mini{background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.2); color:#F2EDF4; text-decoration:none}
+  .lb .btn-mini:hover{border-color:var(--hot); color:var(--hot)}
+  .lb .btn-mini[data-done="1"]{border-color:var(--go); color:var(--go)}
+  .lb-close{position:absolute; top:14px; right:14px; width:42px; height:42px; border-radius:99px;
+    border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.07); color:#F2EDF4;
+    font-family:var(--mono); font-size:1.1rem; line-height:1; cursor:pointer}
+  .lb-close:hover{border-color:var(--hot); color:var(--hot)}
+
+  /* ---------- receipt ---------- */
+  .money{display:grid; grid-template-columns:1.05fr .95fr; gap:22px; align-items:start}
+  .money>*{min-width:0}
+  .tools>*{min-width:0}
+  .steps>*{min-width:0}
+  .receipt{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--r);
+    padding:26px 24px; box-shadow:var(--shadow); font-family:var(--mono);
+    font-variant-numeric:tabular-nums;
+  }
+  .receipt h3{font-family:var(--mono); font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:700}
+  .rlist{display:flex; flex-direction:column; gap:2px; margin:18px 0 0}
+  .rrow{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:2px 12px; padding:9px 0; font-size:.9rem; border-bottom:1px dotted var(--line)}
+  .rrow span:first-child{color:var(--muted); flex:1 1 auto; min-width:0; overflow-wrap:anywhere}
+  .rrow span:last-child{white-space:nowrap}
+  .rtotal{display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-top:16px; padding-top:14px; border-top:2px solid var(--line); font-size:.92rem; color:var(--muted)}
+  .rtotal b{font-size:1rem; color:var(--gold); text-decoration:line-through; text-decoration-color:var(--mag)}
+  .rdeal{margin-top:14px; padding:16px 18px; border-radius:10px; background:var(--grad); color:#fff; display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap}
+  .rdeal .lbl{font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; opacity:.9}
+  .rdeal .amt{font-family:var(--display); font-weight:800; font-size:1.9rem; letter-spacing:-.02em}
+  .rnote{margin-top:12px; font-size:.76rem; color:var(--dim); line-height:1.5}
+
+  .calc{background:var(--panel-2); border:1px solid var(--line); border-radius:var(--r); padding:26px 24px}
+  .calc label{display:block; font-size:.9rem; color:var(--muted); margin-bottom:10px}
+  .field{display:flex; align-items:center; gap:10px; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 14px}
+  .field span{font-family:var(--mono); color:var(--dim)}
+  .field input{
+    flex:1; min-width:0; background:transparent; border:0; color:var(--text);
+    font-family:var(--display); font-weight:800; font-size:1.5rem; letter-spacing:-.02em;
+  }
+  .out{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px}
+  .stat{background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px 16px}
+  .stat .k{font-family:var(--mono); font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--dim)}
+  .stat .v{font-family:var(--display); font-weight:800; font-size:1.55rem; letter-spacing:-.02em; margin-top:4px; font-variant-numeric:tabular-nums}
+  .v.go{color:var(--go)}
+  .calc .verdict{margin-top:16px; font-size:.97rem; color:var(--muted)}
+  .calc .verdict b{color:var(--gold)}
+  .share-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; align-items:center}
+  .btn-mini{
+    font-family:var(--mono); font-size:.76rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; padding:9px 14px; border-radius:99px;
+    border:1px solid var(--line); background:var(--panel); color:var(--text); cursor:pointer;
+    transition:border-color .16s ease, color .16s ease;
+  }
+  .btn-mini:hover{border-color:var(--hot); color:var(--hot)}
+  .btn-mini[data-done="1"]{border-color:var(--go); color:var(--go)}
+
+  /* ---------- steps ---------- */
+  .steps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; counter-reset:s}
+  .step{position:relative; padding:22px 20px 20px; background:var(--panel); border:1px solid var(--line); border-radius:var(--r)}
+  .step::before{
+    counter-increment:s; content:counter(s,decimal-leading-zero);
+    font-family:var(--mono); font-size:.78rem; font-weight:700; color:var(--hot);
+    display:block; margin-bottom:10px; letter-spacing:.1em;
+  }
+  .step p{color:var(--muted); font-size:.95rem; margin-top:7px}
+
+  /* ---------- resell ---------- */
+  .resell{display:flex; gap:20px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+    padding:22px 24px; border:1px dashed var(--line); border-radius:var(--r); background:var(--panel-2); margin-top:24px}
+  .resell div{max-width:56ch}
+  .resell .amt{font-family:var(--display); font-weight:800; font-size:2rem; letter-spacing:-.02em; color:var(--go); font-variant-numeric:tabular-nums}
+  .resell p{color:var(--muted); font-size:.95rem; margin-top:6px}
+
+  /* ---------- faq ---------- */
+  .faq{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px}
+  .faq>*{min-width:0}
+  .qa{background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:22px 20px}
+  .qa p{color:var(--muted); font-size:.95rem; margin-top:8px}
+
+  /* ---------- close ---------- */
+  .close{border-bottom:0; text-align:left; padding-block:64px 26px}
+  .close-card{
+    position:relative; overflow:hidden; border-radius:20px; border:1px solid var(--line);
+    background:var(--panel); padding:44px 36px; display:flex; flex-direction:column; gap:20px; box-shadow:var(--shadow);
+  }
+  .close-card::after{content:""; position:absolute; left:0; top:0; bottom:0; width:6px; background:var(--grad)}
+  .close-card h2{max-width:22ch}
+  .foot{padding-block:20px 18px; color:var(--dim); font-size:.85rem; display:flex; flex-wrap:wrap; gap:10px 22px; justify-content:space-between}
+  .foot a{color:var(--muted)}
+
+  /* ---------- sticky bar ---------- */
+  .stickybar{
+    position:fixed; left:0; right:0; bottom:0; z-index:20;
+    background:var(--bar); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    border-top:1px solid var(--line);
+    transform:translateY(110%); transition:transform .28s ease; will-change:transform;
+  }
+  .stickybar[data-show="1"]{transform:translateY(0)}
+  .stickybar .wrap{display:flex; align-items:center; justify-content:space-between; gap:14px; padding-block:12px}
+  .sb-price{display:flex; flex-direction:column; gap:2px; min-width:0}
+  .sb-price .big{font-family:var(--display); font-weight:800; font-size:1.25rem; letter-spacing:-.02em}
+  .sb-price .small{font-family:var(--mono); font-size:.74rem; color:var(--muted)}
+  .stickybar .btn{padding:12px 20px; font-size:.95rem; flex:none}
+
+  /* ---------- mobiel: groter, rustiger, beter leesbaar ---------- */
+  @media (max-width:860px){
+    body{font-size:19px; line-height:1.62}
+    .wrap{padding-inline:18px}
+    .tools{grid-template-columns:1fr; gap:22px}
+    .money{grid-template-columns:1fr; gap:20px}
+    .steps{grid-template-columns:1fr; gap:16px}
+    .faq{grid-template-columns:1fr; gap:16px}
+    section{padding-block:52px}
+
+    h1{font-size:clamp(2rem,7.4vw,2.5rem); line-height:1.1}
+    h2{font-size:clamp(2rem,7.4vw,2.5rem); line-height:1.1}
+    h3{font-size:1.3rem}
+    .eyebrow{font-size:.8rem; letter-spacing:.14em}
+    .sec-head{gap:14px; margin-bottom:28px}
+    .sec-head p, .lede{font-size:1.14rem; line-height:1.65}
+
+    .hero-inner{padding-block:44px 44px; gap:24px}
+    .rail .bar{height:4px}
+
+    .pricechip{align-self:stretch; padding:18px 20px; gap:4px 12px}
+    .pricechip .now{font-size:2.6rem}
+    .pricechip .was{font-size:1.05rem}
+    .pricechip .per{font-size:.95rem}
+    .pricechip .sub{font-size:.88rem; margin-top:4px}
+
+    .cta-row{flex-direction:column; align-items:stretch; gap:12px}
+    .btn{width:100%; justify-content:center; padding:19px 22px; font-size:1.1rem; border-radius:16px}
+    .ticks{flex-direction:column; gap:12px; font-size:1.02rem}
+    .dot{width:9px; height:9px}
+
+    .tool-body{padding:22px 20px 26px; gap:12px}
+    .tool-top{flex-direction:column; gap:6px}
+    .tag{font-size:.85rem; padding-top:0}
+    .tool p{font-size:1.06rem}
+    .tool .gain{font-size:1.06rem}
+    .demo{font-size:.95rem; margin-top:8px; padding-bottom:2px}
+
+    .receipt{padding:24px 20px}
+    .receipt h3{font-size:.82rem}
+    .rrow{font-size:1rem; padding:12px 0; gap:14px}
+    .rrow span:last-child{white-space:nowrap}
+    .rtotal{font-size:1.02rem}
+    .rtotal b{font-size:1.15rem}
+    .rdeal{padding:18px; gap:6px}
+    .rdeal .lbl{font-size:.85rem}
+    .rdeal .amt{font-size:2.3rem}
+    .rnote{font-size:.92rem; line-height:1.55}
+
+    .calc{padding:24px 20px}
+    .calc label{font-size:1.05rem}
+    .field{padding:14px 16px}
+    .field input{font-size:1.9rem}
+    .field span{font-size:1.2rem}
+    .out{gap:12px; margin-top:20px}
+    .stat{padding:16px}
+    .stat .k{font-size:.76rem}
+    .stat .v{font-size:1.7rem}
+    .calc .verdict{font-size:1.08rem; margin-top:18px}
+    .btn-mini{font-size:.82rem; padding:11px 16px}
+
+    .step{padding:22px 20px}
+    .step::before{font-size:.85rem}
+    .step p{font-size:1.05rem}
+    .qa{padding:22px 20px}
+    .qa p{font-size:1.05rem}
+
+    .resell{padding:22px 20px; gap:14px; flex-direction:column; align-items:flex-start}
+    .resell p{font-size:1.06rem}
+    .resell .amt{font-size:2.6rem}
+
+    .close{padding-block:52px 20px}
+    .close-card{padding:32px 22px; border-radius:18px; gap:18px}
+    .close-card::after{width:5px}
+    .foot{font-size:.95rem; gap:10px; padding-block:16px 14px}
+
+    .stickybar .wrap{padding-block:10px; gap:10px}
+    .stickybar .btn{width:auto; padding:13px 18px; font-size:1rem; border-radius:99px}
+    .sb-price .big{font-size:1.15rem}
+    .sb-price .small{font-size:.72rem}
+  }
+  @media (max-width:560px){
+    .out{grid-template-columns:1fr}
+    .stat .v{font-size:1.9rem}
+    .rrow{flex-direction:column; gap:2px; align-items:flex-start}
+    .rrow span:last-child{font-weight:700; color:var(--text)}
+    .sb-price .small{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important} }
+</style>
+
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="rail">
+      <span class="eyebrow">BBs-Solutions&nbsp;· Ultimate Bundel</span>
+      <span class="bar"></span>
+    </div>
+
+    <h1>Zes apps die je website<span class="line2 grad-text">aan het werk zetten.</span></h1>
+
+    <p class="lede">Chatbot, afsprakenplanner, slider, videogalerij, Google Reviews én je Instagram-feed — <strong>alle zes tegelijk</strong> op jouw site. Geen plugin-chaos, geen programmeerwerk, geen los abonnement per app. Eén bundel, één keer per jaar, <strong>€ 60,-</strong>. Dat is 16 cent per dag voor een website die doorwerkt als jij slaapt.</p>
+
+    <div class="pricechip">
+      <span class="was">€ 65,98</span>
+      <span class="now grad-text">€ 60,-</span>
+      <span class="per">/ jaar · alle 6 de apps</span>
+      <span class="sub">€ 5,- per maand · € 0,16 per dag</span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://myfreemium.app">Bundel activeren — € 60,-</a>
+      <a class="btn btn-ghost" href="#apps">Eerst de demo's bekijken</a>
+    </div>
+
+    <div class="ticks">
+      <span><i class="dot"></i> Plug &amp; play — geen programmeerwerk</span>
+      <span><i class="dot"></i> Alle 6 live te testen</span>
+      <span><i class="dot"></i> Werkt naast je huidige website</span>
+    </div>
+  </div>
+</header>
+
+<section id="apps">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Wat je binnenhaalt</span>
+      <h2>Zes tools. Zes gaten in je website gedicht.</h2>
+      <p>Elke app lost één concreet lek op: een bezoeker die wegklikt, een afspraak die nooit gemaakt wordt, een twijfelaar die geen bewijs ziet. Klik door naar de live demo en probeer ze zelf uit.</p>
+    </div>
+
+    <div class="tools">
+      <article class="tool">
+        <img class="shot" src="https://01.myfreemium.app/wp-content/uploads/2026/09/chatb.png" alt="Demo van de AI-chatbot op een website" loading="lazy" onerror="this.remove()">
+        <a class="tool-body" href="https://chatbot.myfreemium.app" target="_blank" rel="noopener">
+          <div class="tool-top"><h3>Ultimate Virtual Assistant</h3><span class="tag">los € 19,99 p/jaar</span></div>
+          <p>Een AI-chatbot die je bezoekers direct antwoord geeft, precies weet wat jij verkoopt en ondertussen namen en e-mailadressen verzamelt.</p>
+          <p class="gain">Je mist geen vraag meer om 23:00 uur.</p>
+          <span class="demo">chatbot.myfreemium.app →</span>
+        </a>
+      </article>
+
+      <article class="tool">
+        <img class="shot" src="https://01.myfreemium.app/wp-content/uploads/2026/09/book.png" alt="Demo van het boekingssysteem met kalender en tijdslots" loading="lazy" onerror="this.remove()">
+        <a class="tool-body" href="https://booking.myfreemium.app" target="_blank" rel="noopener">
+          <div class="tool-top"><h3>Ultimate Booking System</h3><span class="tag">los € 11,99 p/jaar</span></div>
+          <p>Bezoekers kiezen zelf een dag en tijdslot. Jij krijgt de afspraak binnen — zonder heen-en-weer gemail en met minder no-shows.</p>
+          <p class="gain">Je agenda vult zichzelf, ook in het weekend.</p>
+          <span class="demo">booking.myfreemium.app →</span>
+        </a>
+      </article>
+
+      <article class="tool">
+        <img class="shot" src="https://01.myfreemium.app/wp-content/uploads/2026/09/slid.png" alt="Demo van de responsive slider met banners" loading="lazy" onerror="this.remove()">
+        <a class="tool-body" href="https://slider.myfreemium.app" target="_blank" rel="noopener">
+          <div class="tool-top"><h3>Ultimate Visual Storyteller</h3><span class="tag">duo A · € 17,- p/jaar</span></div>
+          <p>Een vloeiende slider voor je mooiste beelden, banners en acties. Responsive, met strakke overgangen en klikbare call-to-actions.</p>
+          <p class="gain">Je beste aanbod staat altijd bovenaan.</p>
+          <span class="demo">slider.myfreemium.app →</span>
+        </a>
+      </article>
+
+      <article class="tool">
+        <img class="shot" src="https://01.myfreemium.app/wp-content/uploads/2026/09/yout.png" alt="Demo van de YouTube-galerij met video's en zoekfunctie" loading="lazy" onerror="this.remove()">
+        <a class="tool-body" href="https://youtube.myfreemium.app" target="_blank" rel="noopener">
+          <div class="tool-top"><h3>Ultimate Video Experience</h3><span class="tag">duo A · € 17,- p/jaar</span></div>
+          <p>Je YouTube-kanaal, playlists en losse video's netjes op je eigen site — inclusief zoekfunctie, kijkcijfers en abonneerknop.</p>
+          <p class="gain">Bezoekers blijven kijken op jouw pagina.</p>
+          <span class="demo">youtube.myfreemium.app →</span>
+        </a>
+      </article>
+
+      <article class="tool">
+        <img class="shot" src="https://01.myfreemium.app/wp-content/uploads/2026/09/rev.png" alt="Demo van de Google Reviews-carrousel met vijf sterren" loading="lazy" onerror="this.remove()">
+        <a class="tool-body" href="https://review.myfreemium.app" target="_blank" rel="noopener">
+          <div class="tool-top"><h3>Ultimate Trust Builder</h3><span class="tag">duo B · € 17,- p/jaar</span></div>
+          <p>Je echte Google Reviews in een nette carrousel op je site. Vijf sterren, geverifieerde namen, automatisch bijgewerkt.</p>
+          <p class="gain">Twijfelaars worden kopers.</p>
+          <span class="demo">review.myfreemium.app →</span>
+        </a>
+      </article>
+
+      <article class="tool">
+        <img class="shot" src="https://01.myfreemium.app/wp-content/uploads/2026/09/inst.png" alt="Demo van de Instagram-feed met profielblok en fotoraster" loading="lazy" onerror="this.remove()">
+        <a class="tool-body" href="https://insta-feed.myfreemium.app" target="_blank" rel="noopener">
+          <div class="tool-top"><h3>Ultimate Visual Powerhouse</h3><span class="tag">duo B · € 17,- p/jaar</span></div>
+          <p>Je Instagram-posts, Reels en video's live op je website, met profielblok en volgknop. Post je op Instagram? Dan ververst je site mee.</p>
+          <p class="gain">Je site voelt levend in plaats van stilstaand.</p>
+          <span class="demo">insta-feed.myfreemium.app →</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="prijs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">De rekensom</span>
+      <h2>Los besteld: € 65,98. Als bundel: € 60,-</h2>
+      <p>Geen kunstmatig opgeblazen streepprijs. Dit zijn gewoon de echte losse tarieven bij elkaar opgeteld. Je bespaart € 5,98 — en belangrijker: los geldt een minimum van twee apps, in de bundel krijg je ze alle zes.</p>
+    </div>
+
+    <div class="money">
+      <div class="receipt">
+        <h3>Losse waarde per jaar</h3>
+        <div class="rlist">
+          <div class="rrow"><span>Ultimate Virtual Assistant (AI-chatbot)</span><span>€ 19,99</span></div>
+          <div class="rrow"><span>Ultimate Booking System</span><span>€ 11,99</span></div>
+          <div class="rrow"><span>Widget-duo A — Slider + Video</span><span>€ 17,-</span></div>
+          <div class="rrow"><span>Widget-duo B — Reviews + Instagram</span><span>€ 17,-</span></div>
+        </div>
+        <div class="rtotal"><span>Totale losse waarde</span><b>€ 65,98</b></div>
+        <div class="rdeal">
+          <span class="lbl">Bundelprijs · alles inbegrepen</span>
+          <span class="amt">€ 60,-</span>
+        </div>
+        <p class="rnote">Eén jaar, alle zes de apps, één bedrag. Je hoeft niet te kiezen welke app je dit jaar even overslaat.</p>
+      </div>
+
+      <div class="calc">
+        <span class="eyebrow">Terugverdien-check</span>
+        <label for="klantwaarde" style="margin-top:12px">Wat levert één nieuwe klant jou gemiddeld op?</label>
+        <div class="field">
+          <span>€</span>
+          <input id="klantwaarde" type="number" min="1" step="10" value="350" inputmode="numeric" aria-describedby="verdict">
+        </div>
+        <div class="out">
+          <div class="stat"><div class="k">Kosten per jaar</div><div class="v">€ 60</div></div>
+          <div class="stat"><div class="k">Winst bij 1 klant</div><div class="v go" id="winst">€ 290</div></div>
+          <div class="stat"><div class="k">Rendement</div><div class="v go" id="roi">483%</div></div>
+          <div class="stat"><div class="k">Kosten per dag</div><div class="v">€ 0,16</div></div>
+        </div>
+        <p class="verdict" id="verdict"><b>Eén</b> extra klant per jaar en de hele bundel is terugverdiend — dat is € 350 omzet tegenover € 60 kosten. Alles daarna is winst.</p>
+        <div class="share-row">
+          <button class="btn-mini" id="copybtn" type="button">Kopieer deze rekensom</button>
+          <button class="btn-mini" id="sharebtn" type="button" hidden="">Deel dit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="resell">
+      <div>
+        <span class="eyebrow">Meerdere websites onder je beheer?</span>
+        <p>Zet je de bundel op drie sites — je eigen site en die van twee relaties — dan staat er <b>3 × € 54.- = € 162.-</b> tegenover één keer instellen. Voor iedere site geldt hetzelfde: één klant erbij en het is eruit.</p>
+      </div>
+      <span class="amt">€ 162.-</span>
+    </div>
+  </div>
+</section>
+
+<section id="roi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Waarom dit geen kostenpost is</span>
+      <h2>€ 60 is geen investering. Het is een rondje koffie.</h2>
+      <p>Reken het even mee, want dit is waar de meeste ondernemers stil van worden.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Eén gemiste chat kost meer dan een jaar bundel</h3>
+        <p>Een bezoeker met een vraag op zondagavond klikt door naar de concurrent als er niemand antwoordt. De chatbot antwoordt wél — voor 16 cent per dag.</p>
+      </div>
+      <div class="step">
+        <h3>Eén geboekte afspraak en je staat op nul</h3>
+        <p>De boekingstool zet een twijfelende bezoeker om in een afspraak in je agenda. Die ene afspraak dekt de volledige jaarprijs — en alles daarna is winst.</p>
+      </div>
+      <div class="step">
+        <h3>Reviews en beeld doen de rest</h3>
+        <p>Vijf sterren, een levende Instagram-feed en je eigen video's maken van een onbekende website een bedrijf waar je zaken mee durft te doen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Voordat je klikt</span>
+      <h2>Vier vragen die iedereen stelt</h2>
+    </div>
+
+    <div class="faq">
+      <div class="qa">
+        <h3>Werkt dit naast mijn huidige website?</h3>
+        <p>Ja. De apps draaien náást je site en hoeven niets aan je bestaande opzet te veranderen. Je zet ze op de plek waar je ze wilt hebben — de rest van je website blijft precies zoals hij is.</p>
+      </div>
+      <div class="qa">
+        <h3>Moet ik kunnen programmeren?</h3>
+        <p>Nee. Alles is plug &amp; play: je hoeft geen regel code te schrijven en geen plugin te onderhouden. Aanzetten, instellen wat je wilt tonen, klaar.</p>
+      </div>
+      <div class="qa">
+        <h3>Kan ik ze eerst uitproberen?</h3>
+        <p>Alle zes staan live als demo, hierboven in de kaarten. Geen video van hoe het zou kunnen werken — de echte apps, waar je zelf op kunt klikken.</p>
+      </div>
+      <div class="qa">
+        <h3>Krijg ik er echt alle zes?</h3>
+        <p>Alle zes. Bestel je los, dan geldt een minimum van twee apps en betaal je per stuk. In de bundel vervalt dat: je krijgt het hele pakket voor één bedrag per jaar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <div class="close-card">
+      <span class="eyebrow">Klaar om aan te zetten</span>
+      <h2>Alle zes de apps, een jaar lang, voor € 60,-</h2>
+      <p class="lede">Bekijk gerust eerst alle demo's — ze staan hierboven en werken allemaal live. Bevalt het? Dan staat de bundel binnen no-time op je eigen site, zonder dat je één regel code aanraakt.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://myfreemium.app">Ja, ik neem de bundel — € 60,-</a>
+        <a class="btn btn-ghost" href="#apps">Terug naar de demo's</a>
+      </div>
+      <p class="ticks"><span><i class="dot"></i> Eén bedrag per jaar · geen verrassingen per app</span></p>
+    </div>
+  </div>
+  <div class="wrap foot">
+    <span>BBsSolutions — Ultimate Website Supercharge Bundel</span>
+    <span>Demo's: chatbot · booking · slider · youtube · review · insta-feed <span style="color:var(--dim)">.myfreemium.app</span></span>
+  </div>
+</section>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Vergrote demo" hidden="">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Sluiten">×</button>
+  <figure class="lb-figure">
+    <img id="lbImg" src="" alt="">
+    <figcaption class="lb-cap">
+      <span class="lb-name" id="lbName"></span>
+      <span class="lb-actions">
+        <a class="btn-mini" id="lbDemo" href="#" target="_blank" rel="noopener">Live demo openen</a>
+        <button class="btn-mini" id="lbShare" type="button">Deel deze demo</button>
+      </span>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="stickybar" id="stickybar">
+  <div class="wrap">
+    <div class="sb-price">
+      <span class="big">Alle 6 de apps — € 60,-</span>
+      <span class="small">per jaar · € 0,16 per dag</span>
+    </div>
+    <a class="btn btn-primary" href="https://myfreemium.app">Bundel activeren</a>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var PRIJS = 60;
+    var input = document.getElementById('klantwaarde');
+    var winst = document.getElementById('winst');
+    var roi = document.getElementById('roi');
+    var verdict = document.getElementById('verdict');
+    var copybtn = document.getElementById('copybtn');
+    var sharebtn = document.getElementById('sharebtn');
+    var woord = ['nul','Eén','Twee','Drie','Vier','Vijf','Zes','Zeven','Acht','Negen','Tien'];
+    var shareText = '';
+
+    function euro(n){ return '€ ' + Math.round(n).toLocaleString('nl-NL'); }
+
+    function update(){
+      var v = parseFloat(input.value);
+      if (!isFinite(v) || v <= 0) {
+        winst.textContent = '—';
+        roi.textContent = '—';
+        verdict.textContent = 'Vul in wat een nieuwe klant je gemiddeld oplevert.';
+        shareText = '';
+        return;
+      }
+      var nodig = Math.ceil(PRIJS / v);
+      var opbrengst = nodig * v;
+      var netto = v - PRIJS;
+      winst.textContent = euro(netto > 0 ? netto : 0);
+      roi.textContent = Math.round((netto / PRIJS) * 100).toLocaleString('nl-NL') + '%';
+      var n = nodig <= 10 ? woord[nodig] : nodig;
+      var klantwoord = nodig === 1 ? 'klant' : 'klanten';
+      verdict.innerHTML = '<b>' + n + '</b> extra ' + klantwoord + ' per jaar en de hele bundel is terugverdiend — dat is ' +
+        euro(opbrengst) + ' omzet tegenover ' + euro(PRIJS) + ' kosten. Alles daarna is winst.';
+      shareText = 'Rekensom: één nieuwe klant levert mij ' + euro(v) + ' op. ' +
+        'De Ultimate Supercharge Bundel van BBsSolutions kost ' + euro(PRIJS) + ' per jaar — zes apps voor mijn website. ' +
+        'Na ' + nodig + ' ' + klantwoord + ' is dat eruit. Rendement: ' + roi.textContent + '. https://myfreemium.app';
+    }
+
+    function flash(btn, tekst){
+      var oud = btn.textContent;
+      btn.textContent = tekst;
+      btn.dataset.done = '1';
+      setTimeout(function(){ btn.textContent = oud; btn.removeAttribute('data-done'); }, 2200);
+    }
+
+    copybtn.addEventListener('click', function(){
+      if (!shareText) { return; }
+      try {
+        navigator.clipboard.writeText(shareText).then(function(){
+          flash(copybtn, 'Gekopieerd');
+        }, function(){
+          flash(copybtn, 'Kopiëren lukt niet');
+        });
+      } catch (e) {
+        flash(copybtn, 'Kopiëren lukt niet');
+      }
+    });
+
+    if (navigator.share) {
+      sharebtn.hidden = false;
+      sharebtn.addEventListener('click', function(){
+        if (!shareText) { return; }
+        navigator.share({ title: 'Ultimate Supercharge Bundel', text: shareText }).catch(function(){});
+      });
+    }
+
+    input.addEventListener('input', update);
+    update();
+
+    /* zwevende balk: verschijnt zodra de hero voorbij is en blijft daarna staan */
+    var bar = document.getElementById('stickybar');
+    var hero = document.querySelector('.hero');
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function(e){
+        bar.dataset.show = e[0].isIntersecting ? '0' : '1';
+      }, { threshold: 0 }).observe(hero);
+    } else {
+      bar.dataset.show = '1';
+    }
+
+    /* lightbox */
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lbImg');
+    var lbName = document.getElementById('lbName');
+    var lbDemo = document.getElementById('lbDemo');
+    var lbShare = document.getElementById('lbShare');
+    var lbClose = document.getElementById('lbClose');
+    var laatsteKnop = null;
+
+    function openLightbox(src, alt, naam, demo){
+      lbImg.src = src;
+      lbImg.alt = alt;
+      lbName.textContent = naam;
+      lbDemo.href = demo;
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    function sluitLightbox(){
+      lb.hidden = true;
+      lbImg.src = '';
+      document.body.style.overflow = '';
+      if (laatsteKnop) { laatsteKnop.focus(); }
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll('.tool'), function(kaart){
+      var img = kaart.querySelector('.shot');
+      if (!img) { return; }
+      var naam = kaart.querySelector('h3').textContent.trim();
+      var demo = kaart.querySelector('.tool-body').getAttribute('href');
+
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Vergroot de demo van ' + naam);
+
+      function open(e){
+        e.preventDefault();
+        e.stopPropagation();
+        laatsteKnop = img;
+        openLightbox(img.currentSrc || img.src, img.alt, naam, demo);
+      }
+      img.addEventListener('click', open);
+      img.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' ') { open(e); }
+      });
+    });
+
+    lbClose.addEventListener('click', sluitLightbox);
+    lb.addEventListener('click', function(e){
+      if (e.target === lb || e.target.classList.contains('lb-figure')) { sluitLightbox(); }
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && !lb.hidden) { sluitLightbox(); }
+    });
+
+    lbShare.addEventListener('click', function(){
+      var url = lbDemo.href;
+      var tekst = lbName.textContent + ' — live demo van de Ultimate Supercharge Bundel';
+      if (navigator.share) {
+        navigator.share({ title: lbName.textContent, text: tekst, url: url }).catch(function(){});
+        return;
+      }
+      try {
+        navigator.clipboard.writeText(tekst + ' ' + url).then(function(){
+          flash(lbShare, 'Link gekopieerd');
+        }, function(){
+          flash(lbShare, 'Kopieren lukt niet');
+        });
+      } catch (e) {
+        flash(lbShare, 'Kopieren lukt niet');
+      }
+    });
+  })();
+</script>
